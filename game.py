@@ -17,9 +17,9 @@ def play():
         attempts += 1
 
         if guess < number:
-            print("Higher!")
+            print(f"Higher! (Attempt {attempts})")
         elif guess > number:
-            print("Lower!")
+            print(f"Lower! (Attempt {attempts})")
         else:
             print(f"Correct! You got it in {attempts} guess{'es' if attempts != 1 else ''}.")
             break
